@@ -19,8 +19,9 @@ public class Main {
         System.out.println("3. Take pet from shelter (take);");
         System.out.println("3. Exit (exit);");
 
-        while (true) {
-            String menuItem = input.nextLine();
+        String menuItem = "init";
+        while (!menuItem.equals("exit")) {
+            menuItem = input.nextLine();
             switch (menuItem) {
                 case "add" -> {
                     System.out.println("Name: ");
